@@ -1,0 +1,122 @@
+/*Exercicio 0: Estilização inicial
+  Exercicio 1: Estilização Curiosidades
+  Exercicio 2: páginas `operarias.html` e `zangoes.html`
+  Exercicio 3: Topo da página principal 
+  Exercicio 4: Outras estilizações
+  Exercicio 5: Criando a página `rainha.html`
+  Exercicio 6: Incluindo `abelhinhas.js` 
+  */
+
+
+/*body*/
+
+body{
+
+    background-image: linear-gradient(0deg, khaki, rgb(143,188,143));
+    font-size: 20px;
+    margin: 0px 65px; /* 0px 60px*/
+}
+
+/*paragraph*/
+
+p{
+    text-align: justify;
+}
+
+#logo{
+
+    display: block;
+    /*margens*/
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 4px #000000;
+    padding: 30px;
+    /* cor em rgba*/
+    background-color: rgba(248, 248, 255, 0.3);
+
+}
+
+.curiosidade{ /* presente como classe em index.html*/
+
+    border-radius: 10px ;
+    /* imagem já existe na pasta*/
+    background-image: url("imgs/favo-de-mel.png");
+    border: solid 1px gold; /*gold ou golderod?*/
+    padding: 15px;
+}
+
+.curiosidade img{
+
+    /*configs para a img de curiosidade*/
+    margin-right: 20px;
+    float: left;
+}
+
+.casta-de-abelha{
+
+    shape-outside: circle(50%); /*20 minutos procurando erro por esquecer de ;*/
+    border-radius: 50%;
+    border: double 5px gold; /*mesma cor que a de .curiosidade*/
+
+}
+
+#operaria{ /* config pra page de operarias*/
+
+    float: left;
+    margin-right: 20px;
+}
+
+#zangao{ /* config pra page de zangões*/
+
+    margin-left: 20px;
+    float: right;
+}
+
+/*configs para os Hyperlinks*/
+
+a:link{
+    
+    color:purple;
+}
+
+a:active{
+    
+    color: blue;
+}
+
+a:visited{
+    
+    color: black;
+}
+
+a:hover{
+    
+    color: gray;
+}
+
+
+a[href^="http"]{
+
+    background-color: rgba(63, 87, 36, 0.3);
+}
+
+p:last-of-type{
+
+    text-align: right;
+}
+
+
+#paragrafo-clear{
+    
+    clear: left;
+    margin-top: 50px;
+}
+
+
+/* Arquivo .css feito e inseridos os ids no index para chamar as definições para a página.
+   Começar a fazer a página para a rainha*/
+
+/*Agora resta ajeitar a posição do título, a dita abelinha em JS e a música*
+Título - RESOLVIDO: display block
+A abelha está toda pronta econfigurada já pelo Clone do repositorio no Git do enunciado, restando saber como chamá-la
+/*
